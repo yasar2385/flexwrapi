@@ -14,20 +14,20 @@ var objA = {
 var objB = {
   title: 'Alphabet',
   hexValue: '00X0',
-  text: 'A'
+  text: 'B'
 };
 var objC = {
   title: 'Alphabet',
   hexValue: '00X0',
-  text: 'A'
+  text: 'C'
 };
 var objD = {
   title: 'Alphabet',
   hexValue: '00X0',
-  text: 'A'
+  text: 'D'
 };
 Arr[objA.text] = objA;
 Arr[objB.text] = objB;
 Arr[objC.text] = objC;
 Arr[objD.text] = objD;
-console.log(Arr);
+console.log(Arr['A']);
