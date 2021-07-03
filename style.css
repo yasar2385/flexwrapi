@@ -1,0 +1,16 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+h1,
+h2 {
+  font-family: Lato;
+}
+#bdy {
+  width: 25rem;
+  height: 25rem;
+  background-color: yellow;
+}
+
+#bdy div {
+  width: 3rem;
+  background-color: blue;
+}
