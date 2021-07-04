@@ -76,10 +76,11 @@ Array.from(document.querySelectorAll('.listEntry')).forEach(el => {
     document.getElementById(edit_id).onchange = function() {
       document.getElementById(label_id).textContent = this.value;
     };
-    //keypress
-    document.getElementById(edit_id).onkeydown = function() {
+    //onmouseleave
+    document.getElementById(edit_id).onmouseleave = function() {
       document.getElementById(label_id).textContent = this.value;
     };
+    //keypress
     document.getElementById(edit_id).onkeypress = function() {
       document.getElementById(label_id).textContent = this.value;
     };

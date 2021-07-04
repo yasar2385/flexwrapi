@@ -4,16 +4,17 @@ h1,
 h2 {
   font-family: Lato;
 }
-#bdy {
+#bdy {  
   height: 25rem;
   background-color: yellow;
 }
 
 #bdy div {
+  
   background-color: rgb(220, 220, 233);
 }
-#inputDiv,
-#inputEditDiv {
+#inputDiv, #inputEditDiv {
+  min-height: 1.5rem;
   width: 30rem;
   padding: 4px;
 }
