@@ -64,8 +64,23 @@ Array.from(document.querySelectorAll('.listEntry')).forEach(el => {
     input.appendChild(labFrag);
     // here validate
     edit.appendChild(efrag);
-    // onchange
+    // onchange to try
+    // ['onchange', 'onkeypress'].forEach(e => {
+    //   console.log(e);
+    //   document.getElementById(edit_id)[e] = function() {
+    //     document.getElementById(label_id).textContent = this.value;
+    //   };
+    // });
+
+    //onchnage
     document.getElementById(edit_id).onchange = function() {
+      document.getElementById(label_id).textContent = this.value;
+    };
+    //keypress
+    document.getElementById(edit_id).onkeydown = function() {
+      document.getElementById(label_id).textContent = this.value;
+    };
+    document.getElementById(edit_id).onkeypress = function() {
       document.getElementById(label_id).textContent = this.value;
     };
   });
