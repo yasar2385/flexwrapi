@@ -89,5 +89,7 @@ Array.from(document.querySelectorAll('.listEntry')).forEach(el => {
       console.log(this.value);
       document.getElementById(label_id).textContent = this.value;
     };
+    return false;
+    
   });
 });
