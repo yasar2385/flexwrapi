@@ -65,23 +65,28 @@ Array.from(document.querySelectorAll('.listEntry')).forEach(el => {
     // here validate
     edit.appendChild(efrag);
     // onchange to try
-    // ['onchange', 'onkeypress', 'onkeydown'].forEach(e => {
-    //   console.log(e);
+    // ['onchange', 'onkeypress', 'onkeyup'].forEach(e => {
+    // console.log(e);
     //   document.getElementById(edit_id)[e] = function() {
     //     document.getElementById(label_id).textContent = this.value;
     //   };
     // });
 
     //onchnage
-    document.getElementById(edit_id).onchange = function() {
-      document.getElementById(label_id).textContent = this.value;
-    };
+    // document.getElementById(edit_id).onchange = function() {
+    //   //document.getElementById(label_id).textContent = this.value;
+    // };
     //onmouseleave
-    document.getElementById(edit_id).onmouseleave = function() {
-      document.getElementById(label_id).textContent = this.value;
-    };
+    // document.getElementById(edit_id).onmouseleave = function() {
+    //   document.getElementById(label_id).textContent = this.value;
+    // };
     //keypress
-    document.getElementById(edit_id).onkeypress = function() {
+    // document.getElementById(edit_id).onkeypress = function() {
+    //   document.getElementById(label_id).textContent = this.value;
+    // };
+    //onkeyup
+    document.getElementById(edit_id).onkeyup = function() {
+      console.log(this.value);
       document.getElementById(label_id).textContent = this.value;
     };
   });
