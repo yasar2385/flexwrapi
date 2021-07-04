@@ -62,6 +62,7 @@ Array.from(document.querySelectorAll('.listEntry')).forEach(el => {
       );
     // append label and Edit area append
     input.appendChild(labFrag);
+    // here validate
     edit.appendChild(efrag);
     // onchange
     document.getElementById(edit_id).onchange = function() {
