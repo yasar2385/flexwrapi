@@ -85,11 +85,3 @@ Array.from(document.querySelectorAll('.listEntry')).forEach(el => {
     };
   });
 });
-
-//console.log(text, lastoutput);
-
-document.getElementById('sss').onclick = function() {
-  Array.from(document.querySelectorAll('.label-item')).forEach(el => {
-    console.log(el.textContent);
-  });
-};
