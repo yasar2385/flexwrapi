@@ -5,16 +5,15 @@ h2 {
   font-family: Lato;
 }
 #bdy {
-  width: 15rem;
   height: 25rem;
   background-color: yellow;
 }
 
 #bdy div {
-  width: 5rem;
   background-color: rgb(220, 220, 233);
 }
-#inputDiv, #inputEditDiv {
+#inputDiv,
+#inputEditDiv {
   width: 30rem;
   padding: 4px;
 }

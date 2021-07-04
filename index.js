@@ -37,16 +37,37 @@ console.log(Arr);
 Arr[objA.text] = objA;
 console.log(Arr);
 
-document.getElementById('pageedit').onchange = function() {
-  document.getElementById('pagelabel').textContent = this.value;
-};
-
 Array.from(document.querySelectorAll('.listEntry')).forEach(el => {
   el.addEventListener('click', function() {
-    var val = this.getAttribute('data-PI-Value'),
-      id = this.id,
+    var id = this.id,
+      txtValue = this.textContent,
       edit_id = id.split('_')[0] + '_edit',
-      label_id = id.split('_')[0] + '_label';
+      label_id = id.split('_')[0] + '_label',
+      input = document.getElementById('inputDiv'),
+      edit = document.getElementById('inputEditDiv'),
+      piValue = txtValue.split(' ').pop(),
+      split = txtValue.split(' '),
+      text = split.slice(0, -1).join(' ');
     console.log(id, edit_id, label_id);
+
+    var labFrag = document
+      .createRange()
+      .createContextualFragment(
+        `<span class="item">${text} <span id="${label_id}">${piValue}</span></span>`
+      );
+    var efrag = document
+      .createRange()
+      .createContextualFragment(
+        `<span class="item">${text} <input id="${edit_id}" type="number" value='${piValue}'/></span>`
+      );
+    // append label and Edit area append
+    input.appendChild(labFrag);
+    edit.appendChild(efrag);
+    // onchange
+    document.getElementById(edit_id).onchange = function() {
+      document.getElementById(label_id).textContent = this.value;
+    };
   });
 });
+
+//console.log(text, lastoutput);
