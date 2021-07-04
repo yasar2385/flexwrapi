@@ -5,12 +5,17 @@ h2 {
   font-family: Lato;
 }
 #bdy {
-  width: 25rem;
+  width: 15rem;
   height: 25rem;
   background-color: yellow;
 }
 
 #bdy div {
-  width: 3rem;
-  background-color: blue;
+  width: 5rem;
+  background-color: rgb(220, 220, 233);
+}
+#inputDiv {
+  height: 2rem;
+  width: 2rem;
+  background-color: greenyellow;
 }
