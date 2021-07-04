@@ -53,7 +53,7 @@ Array.from(document.querySelectorAll('.listEntry')).forEach(el => {
     var labFrag = document
       .createRange()
       .createContextualFragment(
-        `<span class="item">${text} <span id="${label_id}">${piValue}</span></span>`
+        `<span class="item label-item">${text} <span id="${label_id}">${piValue}</span></span>`
       );
     var efrag = document
       .createRange()
@@ -65,7 +65,7 @@ Array.from(document.querySelectorAll('.listEntry')).forEach(el => {
     // here validate
     edit.appendChild(efrag);
     // onchange to try
-    // ['onchange', 'onkeypress'].forEach(e => {
+    // ['onchange', 'onkeypress', 'onkeydown'].forEach(e => {
     //   console.log(e);
     //   document.getElementById(edit_id)[e] = function() {
     //     document.getElementById(label_id).textContent = this.value;
@@ -87,3 +87,9 @@ Array.from(document.querySelectorAll('.listEntry')).forEach(el => {
 });
 
 //console.log(text, lastoutput);
+
+document.getElementById('sss').onclick = function() {
+  Array.from(document.querySelectorAll('.label-item')).forEach(el => {
+    console.log(el.textContent);
+  });
+};
