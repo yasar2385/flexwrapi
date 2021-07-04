@@ -15,7 +15,15 @@ h2 {
   background-color: rgb(220, 220, 233);
 }
 #inputDiv {
-  height: 2rem;
-  width: 2rem;
-  background-color: greenyellow;
+  width: 30rem;
+  padding: 4px;
+}
+
+#inputDiv span {
+  background-color: yellow;
+  padding: 3px;
+}
+#inputDiv span::after {
+  content: 'x';
+  padding-left: 5px;
 }
