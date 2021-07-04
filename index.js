@@ -1,12 +1,12 @@
 // Import stylesheets
 import './style.css';
-import jQuery from 'jquery';
+import $ from 'jquery';
 
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
-jQuery('input');
+$('input');
 var Arr = {};
 var objA = {
   title: 'Alphabet',

@@ -14,16 +14,18 @@ h2 {
   width: 5rem;
   background-color: rgb(220, 220, 233);
 }
-#inputDiv {
+#inputDiv, #inputEditDiv {
   width: 30rem;
   padding: 4px;
 }
 
-#inputDiv span {
+#inputDiv .item {
   background-color: yellow;
-  padding: 3px;
+  padding: 4px;
+  border-radius: 50px;
+  margin-left: 4px;
 }
-#inputDiv span::after {
+#inputDiv span.item::after {
   content: 'x';
   padding-left: 5px;
 }
