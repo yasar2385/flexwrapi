@@ -1,7 +1,8 @@
 // Import stylesheets
 import './style.css';
+import './yasar.js';
 import $ from 'jquery';
-
+console.log('index.js');
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
