@@ -5,8 +5,11 @@ import $ from 'jquery';
 console.log('index.js');
 // Write Javascript code!
 const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
-$('input');
+
+function test() {
+  console.log('ggggg');
+}
+
 var Arr = {};
 var objA = {
   title: 'Alphabet',
@@ -91,6 +94,5 @@ Array.from(document.querySelectorAll('.listEntry')).forEach(el => {
       document.getElementById(label_id).textContent = this.value;
     };
     return false;
-    
   });
 });
